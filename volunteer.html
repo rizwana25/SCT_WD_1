@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Sukoon Child Welfare NGO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Sukoon Foundation</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header volunteer-header">
+        <div class="container">
+            <h1>Join Our Volunteer Team</h1>
+            <p>Make a difference in a child's life today</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Volunteer Opportunities</h2>
+            <p class="subheading">We have various ways you can contribute your time and skills</p>
+            
+            <div class="opportunities-grid">
+                <div class="opportunity-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Teaching</h3>
+                    <p>Help children with their studies and conduct fun learning activities.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 2-4 hours per week</li>
+                        <li><i class="fas fa-check"></i> Subject expertise preferred</li>
+                        <li><i class="fas fa-check"></i> Training provided</li>
+                    </ul>
+                </div>
+                
+                <div class="opportunity-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Child Care</h3>
+                    <p>Spend quality time with children and organize recreational activities.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Flexible hours</li>
+                        <li><i class="fas fa-check"></i> Great for students</li>
+                    </ul>
+                </div>
+                
+                <div class="opportunity-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Mentoring</h3>
+                    <p>Guide older children with career advice and life skills.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Monthly meetings</li>
+                        <li><i class="fas fa-check"></i> Professional experience helpful</li>
+                    </ul>
+                </div>
+                
+                <div class="opportunity-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Professional Skills</h3>
+                    <p>Offer your professional skills (IT, design, marketing, etc.).</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Project-based</li>
+                        <li><i class="fas fa-check"></i> Remote options available</li>
+                        <li><i class="fas fa-check"></i> Great for corporate teams</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2>Why Volunteer With Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <i class="fas fa-heart"></i>
+                    <h3>Make an Impact</h3>
+                    <p>Directly improve children's lives through your contributions.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-users"></i>
+                    <h3>Join a Community</h3>
+                    <p>Connect with like-minded individuals passionate about child welfare.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Gain Experience</h3>
+                    <p>Develop new skills and enhance your professional profile.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-smile"></i>
+                    <h3>Personal Growth</h3>
+                    <p>Experience the joy of giving and personal fulfillment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section volunteer-form-section">
+        <div class="container">
+            <h2>Volunteer Application</h2>
+            <p class="subheading">Fill out the form below to start your volunteer journey</p>
+            
+            <form id="volunteerForm" class="volunteer-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age*</label>
+                    <input type="number" id="age" name="age" min="18" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="occupation">Occupation/Student</label>
+                    <input type="text" id="occupation" name="occupation">
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest">Area of Interest*</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="teaching">Teaching</option>
+                        <option value="childcare">Child Care</option>
+                        <option value="mentoring">Mentoring</option>
+                        <option value="professional">Professional Skills</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="availability">Availability*</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">Select an option</option>
+                        <option value="weekdays">Weekdays</option>
+                        <option value="weekends">Weekends</option>
+                        <option value="both">Both</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Relevant Experience/Skills</label>
+                    <textarea id="experience" name="experience" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="motivation">Why do you want to volunteer with Sukoon?*</label>
+                    <textarea id="motivation" name="motivation" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the <a href="#">terms and conditions</a> and privacy policy*</label>
+                </div>
+                
+                <button type="submit" class="btn btn-submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><i class="fas fa-user-tie"></i> Volunteer Coordinator: Fathimath Rizwana</p>
+                    <p><i class="fas fa-phone"></i> 8139055063</p>
+                    <p><i class="fas fa-envelope"></i>fathimathrizwana761@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kasaragod,Kerala,India</p>
+                </div>
+                <div class="contact-hours">
+                    <h3>Volunteer Office Hours</h3>
+                    <p><i class="fas fa-clock"></i> Monday-Friday: 9am - 5pm</p>
+                    <p><i class="fas fa-clock"></i> Saturday: 10am - 2pm</p>
+                    <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sukoon. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
